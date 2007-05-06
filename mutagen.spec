@@ -1,5 +1,5 @@
 %define name	mutagen
-%define version	1.10.1
+%define version	1.11
 %define release %mkrel 1
 
 Name: 	 	%{name}
