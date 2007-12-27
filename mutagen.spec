@@ -1,18 +1,12 @@
-%define name	mutagen
-%define version	1.11
-%define release %mkrel 1
-
-Name: 	 	%{name}
 Summary: 	Audio tag tools
-Version: 	%{version}
-Release: 	%{release}
-
-Source:		http://www.sacredchao.net/~piman/software/%{name}-%{version}.tar.bz2
-URL:		http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen
-License:	GPL
+Name:		mutagen
+Version:	1.13
+Release:	%mkrel 1
+License:	GPLv2+
 Group:		Sound
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	python-devel
+URL:		http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen
+Source:		http://www.sacredchao.net/~piman/software/%{name}-%{version}.tar.bz2
+%py_requires -d
 BuildArch:	noarch
 
 %description
@@ -32,21 +26,25 @@ The goals are (in rough order of importance):
 %prep
 %setup -q
 
+%build
+%{__python} setup.py build
+
+%check
+%{__python} setup.py test
+
 %install
-rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=%buildroot
+rm -rf %{buildroot}
+%{__python} setup.py install -O2 --skip-build --root %{buildroot}
 
 %find_lang %name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc NEWS README TODO
-%python_sitelib/%name
-%python_sitelib/%name-%{version}-py2.5.egg-info
+%{python_sitelib}/%{name}
+%{python_sitelib}/%{name}-%{version}-*egg-info
 %{_bindir}/*
 %{_mandir}/man1/*
-
-
