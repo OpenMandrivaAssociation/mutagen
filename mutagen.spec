@@ -4,6 +4,7 @@ Version:	1.13
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen
 Source:		http://www.sacredchao.net/~piman/software/%{name}-%{version}.tar.bz2
 %py_requires -d
