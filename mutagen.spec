@@ -1,7 +1,7 @@
 Summary: 	Audio tag tools
 Name:		mutagen
 Version:	1.13
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sound
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
