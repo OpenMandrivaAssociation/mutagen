@@ -1,14 +1,14 @@
-Summary: 	Audio tag tools
+Summary:	Audio tag tools
 Name:		mutagen
-Version:	1.15
+Version:	1.16
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:		http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen
-Source:		http://www.sacredchao.net/~piman/software/%{name}-%{version}.tar.gz
+URL:		http://code.google.com/p/mutagen/
+Source0:	http://mutagen.googlecode.com/files/%{name}-%{version}.tar.gz
 %py_requires -d
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mutagen is an audio metadata tag reader and writer implemented in pure Python.
