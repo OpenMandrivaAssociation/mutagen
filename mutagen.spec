@@ -1,6 +1,6 @@
 Summary:	Audio tag tools
 Name:		mutagen
-Version:	1.18
+Version:	1.19
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
