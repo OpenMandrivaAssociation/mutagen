@@ -1,2 +1,4 @@
+removed_sources:
+  mutagen-1.20.tar.gz: 7a8c1918160e6b5d24acd146f57c08ed942a2fa8
 sources:
-  "mutagen-1.20.tar.gz": 7a8c1918160e6b5d24acd146f57c08ed942a2fa8
+  mutagen-1.21.tar.gz: 21807dd51f36204891597a368bfa2fab1a30a531
