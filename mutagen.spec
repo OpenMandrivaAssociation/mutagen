@@ -4,10 +4,10 @@ Version:	1.21
 Release:	1
 License:	GPLv2+
 Group:		Sound
-URL:		http://code.google.com/p/mutagen/
+Url:		http://code.google.com/p/mutagen/
 Source0:	http://mutagen.googlecode.com/files/%{name}-%{version}.tar.gz
-%py_requires -d
 BuildArch:	noarch
+%py_requires -d
 
 %description
 Mutagen is an audio metadata tag reader and writer implemented in pure Python.
@@ -37,9 +37,9 @@ The goals are (in rough order of importance):
 %{__python} setup.py install -O2 --skip-build --root %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc NEWS README TODO
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-*egg-info
 %{_bindir}/*
 %{_mandir}/man1/*
+
