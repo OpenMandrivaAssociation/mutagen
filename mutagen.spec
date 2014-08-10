@@ -1,7 +1,7 @@
 Summary:	Audio tag tools
 Name:		mutagen
-Version:	1.21
-Release:	8
+Version:	1.23
+Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		http://code.google.com/p/mutagen/
