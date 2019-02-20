@@ -37,7 +37,7 @@ The goals are (in rough order of importance):
 %{__python} setup.py install -O2 --skip-build --root %{buildroot}
 
 %files
-%doc NEWS README TODO
+%doc NEWS
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-*egg-info
 %{_bindir}/*
