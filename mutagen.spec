@@ -1,11 +1,11 @@
 Summary:	Audio tag tools
 Name:		mutagen
-Version:	1.23
-Release:	4
+Version:	1.42.0
+Release:	1
 License:	GPLv2+
 Group:		Sound
-Url:		http://code.google.com/p/mutagen/
-Source0:	http://mutagen.googlecode.com/files/%{name}-%{version}.tar.gz
+Url:		https://mutagen.readthedocs.io/
+Source0:	https://github.com/quodlibet/mutagen/releases/download/release-%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-devel
 
@@ -37,7 +37,7 @@ The goals are (in rough order of importance):
 %{__python} setup.py install -O2 --skip-build --root %{buildroot}
 
 %files
-%doc NEWS README TODO
+%doc NEWS
 %{python_sitelib}/%{name}
 %{python_sitelib}/%{name}-%{version}-*egg-info
 %{_bindir}/*
