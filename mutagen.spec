@@ -1,7 +1,7 @@
 Summary:	Audio tag tools
 Name:		mutagen
-Version:	1.42.0
-Release:	2
+Version:	1.45.1
+Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		https://mutagen.readthedocs.io/
@@ -28,10 +28,6 @@ The goals are (in rough order of importance):
 
 %build
 %{__python} setup.py build
-
-# (tpg) checks fails on x86_64
-#%check
-#%{__python} setup.py test
 
 %install
 %{__python} setup.py install -O2 --skip-build --root %{buildroot}
