@@ -7,7 +7,8 @@ Group:		Sound
 Url:		https://mutagen.readthedocs.io/
 Source0:	https://github.com/quodlibet/mutagen/releases/download/release-%{version}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-devel
+BuildRequires: pkgconfig(python)
+BuildRequires: python3dist(setuptools)
 
 %description
 Mutagen is an audio metadata tag reader and writer implemented in pure Python.
