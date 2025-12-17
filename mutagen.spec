@@ -9,7 +9,7 @@ Source0:	https://github.com/quodlibet/mutagen/releases/download/release-%{versio
 BuildRequires:		pkgconfig(python)
 BuildRequires:		python%{pyver}dist(pyproject-api)
 BuildRequires:		python%{pyver}dist(setuptools)
-BuildRequires:		python%{pyver}dist(setuptools_scm)
+BuildRequires:		python%{pyver}dist(setuptools-scm)
 BuildRequires:    python%{pyver}dist(pip)
 BuildArch:	noarch
 
