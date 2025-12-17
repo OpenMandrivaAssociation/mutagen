@@ -7,9 +7,10 @@ Group:	Sound
 Url:		https://mutagen.readthedocs.io/
 Source0:	https://github.com/quodlibet/mutagen/releases/download/release-%{version}/%{name}-%{version}.tar.gz
 BuildRequires:		pkgconfig(python)
-BuildRequires:		python-pyproject-api
-BuildRequires:		python-setuptools
-BuildRequires:		python-setuptools_scm
+BuildRequires:		python%{pyver}dist(pyproject-api)
+BuildRequires:		python%{pyver}dist(setuptools)
+BuildRequires:		python%{pyver}dist(setuptools_scm)
+BuildRequires:    python%{pyver}dist(pip)
 BuildArch:	noarch
 
 %description
