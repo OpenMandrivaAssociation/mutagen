@@ -1,7 +1,7 @@
 Summary:	Audio tag tools
 Name:	mutagen
-Version:	1.47.0
-Release:	2
+Version:	1.48.1
+Release:	1
 License:	GPLv2+
 Group:	Sound
 Url:		https://mutagen.readthedocs.io/
@@ -37,6 +37,9 @@ The goals are (in rough order of importance):
 
 %prep
 %autosetup -p1
+
+# Fix FSF address
+sed -i 's/51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA/31 Milk Street, # 960789, Boston, MA 02196, USA/g' COPYING
 
 
 %build
