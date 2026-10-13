@@ -1,16 +1,17 @@
 Summary:	Audio tag tools
 Name:	mutagen
 Version:	1.48.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:	Sound
 Url:		https://mutagen.readthedocs.io/
 Source0:	https://github.com/quodlibet/mutagen/releases/download/release-%{version}/%{name}-%{version}.tar.gz
-BuildRequires:		pkgconfig(python)
+BuildRequires:		pkgconfig(python3)
 BuildRequires:		python%{pyver}dist(pyproject-api)
 BuildRequires:		python%{pyver}dist(setuptools)
 BuildRequires:		python%{pyver}dist(setuptools-scm)
 BuildRequires:    python%{pyver}dist(pip)
+BuildRequires:    python%{pyver}dist(wheel)
 BuildArch:	noarch
 
 %description
